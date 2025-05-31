@@ -13,10 +13,10 @@
   <meta name="author" content="" />
   <link rel="shortcut icon" href="images/favicon.png" type="">
 
-  <title> Orthoc </title>
+  <title> Future Home</title>
 
   <!-- bootstrap core css -->
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
 
   <!-- fonts style -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
@@ -32,18 +32,22 @@
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
 
+  <!-- Include Google Font in <head> -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
 </head>
 
 <body class="sub_page">
 
-  <div class="hero_area">
+
     <!-- header section strats -->
-    <header class="header_section">
+    <header class="header_section bg-dark">
       <div class="container">
         <nav class="navbar navbar-expand-lg custom_nav-container ">
           <a class="navbar-brand" href="index.html">
             <span>
-              Orthoc
+              FUTURE HOME
             </span>
           </a>
 
@@ -60,10 +64,10 @@
                 <a class="nav-link" href="about.html"> About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="departments.html">Departments</a>
+                <a class="nav-link" href="services.html">Services</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="doctors.html">Doctors</a>
+                <a class="nav-link" href="">Support</a>
               </li>
               <li class="nav-item active">
                 <a class="nav-link" href="contact.html">Contact Us <span class="sr-only">(current)</span> </a>
@@ -79,7 +83,7 @@
       </div>
     </header>
     <!-- end header section -->
-  </div>
+
 
   <!-- contact section -->
   <section class="contact_section layout_padding">
@@ -93,7 +97,7 @@
         <div class="col-md-6">
           <div class="form_container contact-form">
             <form action="">
-              <div class="form-row">
+              <div class="row">
                 <div class="col-lg-6">
                   <div>
                     <input type="text" placeholder="Your Name" />
@@ -122,7 +126,7 @@
         <div class="col-md-6">
           <div class="map_container">
             <div class="map">
-              <div id="googleMap"></div>
+              <div id="googleMap"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3639.877801595419!2d55.7648193!3d24.176018000000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e8ab7006b208353%3A0x610b7fdba9ee505c!2sFuture%20Home%20llc!5e0!3m2!1sen!2sae!4v1748710401839!5m2!1sen!2sae" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
             </div>
           </div>
         </div>
@@ -131,6 +135,16 @@
   </section>
   <!-- end contact section -->
 
+  <!-- WhatsApp -->
+<a href="https://wa.me/message/3D5PE257ENXMF1"
+   class="btn btn-success position-fixed end-0 rounded-circle d-flex align-items-center justify-content-center me-3"
+   style="bottom: 40px; width: 60px; height: 60px; z-index: 1050;"
+   target="_blank"
+   title="Chat on WhatsApp"
+   aria-label="Chat with us on WhatsApp"
+   data-bs-toggle="tooltip" data-bs-placement="left">
+   <i class="bi bi-whatsapp fs-3"></i>
+</a>
   <!-- footer section -->
   <footer class="footer_section">
     <div class="container">
@@ -138,25 +152,27 @@
         <div class="col-md-6 col-lg-3 footer_col">
           <div class="footer_contact">
             <h4>
-              Reach at..
+              Contact us
             </h4>
             <div class="contact_link_box">
               <a href="">
                 <i class="fa fa-map-marker" aria-hidden="true"></i>
                 <span>
-                  Location
+                  AL AIN-SANAYA<br>
+                  OFFICE FF-13<br>
+                  SALEYAM HAMAD AL DEREI BUILDING
                 </span>
               </a>
               <a href="">
                 <i class="fa fa-phone" aria-hidden="true"></i>
                 <span>
-                  Call +01 1234567890
+                +971 0589279007<br>+971 0505810708
                 </span>
               </a>
               <a href="">
                 <i class="fa fa-envelope" aria-hidden="true"></i>
                 <span>
-                  demo@gmail.com
+                  smarthome@gmail.com
                 </span>
               </a>
             </div>
@@ -182,7 +198,7 @@
               About
             </h4>
             <p>
-              Beatae provident nobis mollitia magnam voluptatum, unde dicta facilis minima veniam corporis laudantium alias tenetur eveniet illum reprehenderit fugit a delectus officiis blanditiis ea.
+              Smart Home is a trusted network service provider delivering fast, secure, and reliable connectivity for homes and businesses. We specialize in smart networking solutions, internet services, and IT support that keep you connected and in control. With expert service and cutting-edge technology, we make your network work—simply and seamlessly.
             </p>
           </div>
         </div>
@@ -192,19 +208,19 @@
               Links
             </h4>
             <div class="footer_links">
-              <a class="" href="index.html">
+              <a class="active" href="index.html">
                 Home
               </a>
               <a class="" href="about.html">
                 About
               </a>
-              <a class="" href="departments.html">
-                Departments
+              <a class="" href="services.html">
+                Services
               </a>
-              <a class="" href="doctors.html">
-                Doctors
+              <a class="" href="">
+                Support
               </a>
-              <a class="active" href="contact.html">
+              <a class="" href="contact.html">
                 Contact Us
               </a>
             </div>
@@ -225,15 +241,15 @@
       <div class="footer-info">
         <p>
           &copy; <span id="displayYear"></span> All Rights Reserved By
-          <a href="https://html.design/">Free Html Templates<br><br></a>
-            &copy; <span id="displayYear"></span> Distributed By
-            <a href="https://themewagon.com/">ThemeWagon</a>
+          <a href="https:///">SMART HOME<br><br></a>
+            &copy; <span id="displayYear"></span> Designed By
+            <a href="https:///">SPANxAi</a>
         </p>
-      </div>
+       
+      </div>  
     </div>
   </footer>
   <!-- footer section -->
-
   <!-- jQery -->
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
   <!-- popper js -->
@@ -246,10 +262,7 @@
   </script>
   <!-- custom js -->
   <script type="text/javascript" src="js/custom.js"></script>
-  <!-- Google Map -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
-  </script>
-  <!-- End Google Map -->
+ 
 
 </body>
 
