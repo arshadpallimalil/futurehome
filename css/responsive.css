@@ -56,22 +56,22 @@
   }
 }
 /* Show large image carousel, hide small one by default */
-/* #carouselExampleControls {
+#carouselExampleControls {
     display: block;
 }
 #carouselExampleControls2 {
     display: none;
-} */
+}
 
 /* On small screens, show small carousel and hide large one */
-/* @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     #carouselExampleControls {
         display: none;
     }
     #carouselExampleControls2 {
         display: block;
     }
-} */
+}
 
 @media (max-width: 1200px) {
   .custom-caption {
