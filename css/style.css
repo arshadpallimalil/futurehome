@@ -792,3 +792,31 @@ a:focus {
   color:#000000 ;
 }
 
+  .stats-section {
+      background-color: #2b2b2b;
+    }
+
+    .stat-card {
+      background-color: #3a3a3a;
+      border-radius: 12px;
+      transition: transform 0.3s ease;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    }
+
+    .stat-card:hover {
+      transform: translateY(-10px);
+    }
+
+    .stat-number {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #FFA500;
+    }
+
+    .stat-label {
+      font-size: 1.1rem;
+      color: #ffffff;
+    }
+     #serverDownModal .modal-content {
+      border-radius: 12px;
+    }

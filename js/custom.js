@@ -44,3 +44,48 @@ function myMap() {
     };
     var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
 }
+var myCarousel = document.querySelector('#carouselExampleControls');
+var carousel = new bootstrap.Carousel(myCarousel, {
+  interval: 3000
+});
+$('#carouselexamplecontrols').carousel({
+  interval: 3000
+});
+
+function animateCounter(el) {
+      const target = +el.getAttribute('data-target');
+      const duration = 2000;
+      const frameRate = 60;
+      const totalFrames = Math.round(duration / (1000 / frameRate));
+      let frame = 0;
+
+      const counter = setInterval(() => {
+        frame++;
+        const progress = frame / totalFrames;
+        const current = Math.round(target * progress);
+
+        el.textContent = current + (target >= 1000 ? '+' : (target < 10 ? '+ Years' : '+'));
+
+        if (frame === totalFrames) clearInterval(counter);
+      }, 1000 / frameRate);
+    }
+    function showServerDownModal() {
+      const myModal = new bootstrap.Modal(document.getElementById('serverDownModal'));
+      myModal.show();
+    }
+
+    function handleScrollAnimation() {
+      const stats = document.querySelectorAll('.stat-number');
+      stats.forEach(el => {
+        const top = el.getBoundingClientRect().top;
+        if (top < window.innerHeight && !el.classList.contains('animated')) {
+          el.classList.add('animated');
+          animateCounter(el);
+        }
+      });
+    }
+
+    window.addEventListener('scroll', handleScrollAnimation);
+    window.addEventListener('load', handleScrollAnimation);
+
+     

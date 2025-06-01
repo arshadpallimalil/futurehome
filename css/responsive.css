@@ -105,28 +105,28 @@
 /* ✅ Small screens (phones) */
 @media (max-width: 768px) {
   .custom-caption {
-    top: 60%;
-    max-width: 90%;
+    top: 40%;
+    max-width: 80%;
     padding: 10px;
   }
 
   .custom-caption h2 {
-    font-size: 1.3rem;
+    font-size: 1rem;
   }
 
   .custom-caption p {
-    font-size: 0.95rem;
+    font-size: 0.65rem;
   }
 }
 
 /* ✅ Extra small screens (very small phones) */
 @media (max-width: 480px) {
   .custom-caption h2 {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 
   .custom-caption p {
-    font-size: 0.85rem;
+    font-size: 0.55rem;
   }
 }
 
@@ -137,7 +137,7 @@
   .custom-btn {
     padding: 0;
     margin: 0;
-    font-size: 0.9rem;
+    font-size: 0.6rem;
     width: 50%;      /* Full width button on small screens */
     box-sizing: border-box;
   }
@@ -146,7 +146,7 @@
 /* Extra small devices */
 @media (max-width: 480px) {
   .custom-btn {
-    font-size: 0.85rem;
+    font-size: 0.65rem;
     padding: 7px 15px;
   }
 }
