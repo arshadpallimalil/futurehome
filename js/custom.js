@@ -44,13 +44,18 @@ function myMap() {
     };
     var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
 }
-var myCarousel = document.querySelector('#carouselExampleControls');
-var carousel = new bootstrap.Carousel(myCarousel, {
-  interval: 3000
+$(document).ready(function() {
+  $('#carouselExampleControls').carousel({
+    interval: 2500,  // Slide every 2.5 seconds
+    ride: 'carousel' // Auto-start sliding
+  });
+
+  $('#carouselExampleControls2').carousel({
+    interval: 2500,
+    ride: 'carousel'
+  });
 });
-$('#carouselexamplecontrols').carousel({
-  interval: 3000
-});
+
 
 function animateCounter(el) {
       const target = +el.getAttribute('data-target');
